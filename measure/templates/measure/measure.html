@@ -5,11 +5,10 @@
         <input type="number" name="value">
         <button type="submit">Adicionar</button>
     </form>
+    {% for measure in measures %}
     <ul class="list-group">
-        <li class="list-group-item">ph = 2</li>
-        <li class="list-group-item">ph = 3</li>
-        <li class="list-group-item">ph = 1</li>
-        <li class="list-group-item">ph = 5</li>
+        <li class="list-group-item">{{measure.type}} = {{measure.value}}</li>
     </ul>
+    {% endfor %}
 </div>
 {% endblock %}
