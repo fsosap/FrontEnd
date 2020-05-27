@@ -3,11 +3,17 @@
 <div class="container">
     <form method="get">
         <input type="number" name="value">
+        <input type="number" name="latitude">
+        <input type="number" name="longitude">
+        <input type="text" name="terrainType">
         <button type="submit">Adicionar</button>
     </form>
     {% for measure in measures %}
     <ul class="list-group">
-        <li class="list-group-item">{{measure.type}} = {{measure.value}}</li>
+        <li class="list-group-item">"temperature" = {{measure.value}}</li>
+        <li class="list-group-item">"latitude" = {{measure.latitude}}</li>
+        <li class="list-group-item">"longitude" = {{measure.longitude}}</li>
+        <li class="list-group-item">"terrain type" = {{measure.terrainType}}</li>
     </ul>
     {% endfor %}
 </div>

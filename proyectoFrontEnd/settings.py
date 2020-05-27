@@ -25,7 +25,7 @@ SECRET_KEY = 'ka2_!*@91$j0uf!dim46z5b0)0aw&b$b-zqymqz*6xmv5hmcby'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
